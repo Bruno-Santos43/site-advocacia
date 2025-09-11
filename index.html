@@ -1,0 +1,760 @@
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia Virtual</title>
+    <meta name="description" content="Escritório de advocacia com mais de 12 anos de experiência em São Paulo. Oferecemos soluções jurídicas especializadas em diversas áreas do direito.">
+    <meta name="keywords" content="advocacia, advogado, direito civil, direito trabalhista, direito empresarial, São Paulo">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="scale"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1> Valéria Penha Advocacia</h1>
+                        <p>Soluções Jurídicas</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Início</a>
+                    <a href="#services" class="nav-link">Serviços</a>
+                    <a href="#about" class="nav-link">Sobre Nós</a>
+                    <a href="#team" class="nav-link">Equipe</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </nav>
+
+                <!-- Contact Info & CTA -->
+                <div class="header-actions">
+                    <div class="header-phone">
+                        <i data-lucide="phone"></i>
+                        <span>(35) 99894-3460 </span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToSection('#contact')">
+                        Consulta Gratuita
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Início</a>
+                <a href="#services" class="mobile-nav-link">Serviços</a>
+                <a href="#about" class="mobile-nav-link">Sobre Nós</a>
+                <a href="#team" class="mobile-nav-link">Equipe</a>
+                <a href="#contact" class="mobile-nav-link">Contato</a>
+                <div class="mobile-menu-footer">
+                    <div class="mobile-contact">
+                        <i data-lucide="phone"></i>
+                        <span>(35) 99894-3460 </span>
+                    </div>
+                    <div class="mobile-contact">
+                        <i data-lucide="mail"></i>
+                        <span>advocaciavirtual.vp@outlook.com.br</span>
+                        <span>escritoriovirtual04@gmail.com</span>
+                    </div>
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('#contact')">
+                        Consulta Gratuita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge">Mais de 12 anos de experiência</div>
+                        <h1 class="hero-title">
+                            Defendemos seus
+                            <span class="hero-subtitle">direitos com excelência</span>
+                        </h1>
+                        <p class="hero-description">
+                            Somos um escritório de advocacia especializado em diversas áreas do direito, 
+                            oferecendo soluções jurídicas personalizadas com foco na satisfação do cliente.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
+                                Agendar Consulta
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                            <button class="btn btn-outline btn-large" onclick="scrollToSection('#services')">
+                                Nossos Serviços
+                            </button>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i data-lucide="shield"></i>
+                                </div>
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Casos Ganhos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Clientes Atendidos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="stat-number">12+</div>
+                                <div class="stat-label">Anos de Experiência</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="hero-img-container">
+                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Escritório de Advocacia">
+                        </div>
+                        <div class="hero-card">
+                            <div class="hero-card-content">
+                                <div class="hero-card-icon">
+                                    <i data-lucide="shield"></i>
+                                </div>
+                                <div class="hero-card-text">
+                                    <div class="hero-card-title">Atendimento 24h</div>
+                                    <div class="hero-card-subtitle">Emergências jurídicas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Áreas de Atuação</div>
+                    <h2 class="section-title">Serviços Jurídicos Especializados</h2>
+                    <p class="section-description">
+                        Oferecemos soluções jurídicas completas em diversas áreas do direito, 
+                        sempre com foco na qualidade e na satisfação do cliente.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card popular">
+                        <div class="service-badge">Popular</div>
+                        <div class="service-icon">
+                            <i data-lucide="scale"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Civil</h3>
+                            <p class="service-description">Contratos, responsabilidade civil, direitos reais e obrigações.</p>
+                            <ul class="service-features">
+                                <li>Contratos</li>
+                                <li>Indenizações</li>
+                                <li>Propriedade</li>
+                                <li>Sucessões</li>
+                            </ul>
+                            <button class="service-btn" onclick="scrollToSection('#contact')">
+                                Saiba Mais
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="briefcase"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Trabalhista</h3>
+                            <p class="service-description">Defesa de direitos trabalhistas e previdenciários.</p>
+                            <ul class="service-features">
+                                <li>Rescisões</li>
+                                <li>FGTS</li>
+                                <li>Horas Extras</li>
+                                <li>Aposentadoria</li>
+                            </ul>
+                            <button class="service-btn" onclick="scrollToSection('#contact')">
+                                Saiba Mais
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="building"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Empresarial</h3>
+                            <p class="service-description">Consultoria jurídica para empresas e empreendedores.</p>
+                            <ul class="service-features">
+                                <li>Constituição</li>
+                                <li>Contratos</li>
+                                <li>Tributário</li>
+                                <li>Compliance</li>
+                            </ul>
+                            <button class="service-btn" onclick="scrollToSection('#contact')">
+                                Saiba Mais
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card popular">
+                        <div class="service-badge">Popular</div>
+                        <div class="service-icon">
+                            <i data-lucide="heart"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito de Família</h3>
+                            <p class="service-description">Divórcios, guarda, pensão alimentícia e adoção.</p>
+                            <ul class="service-features">
+                                <li>Divórcio</li>
+                                <li>Guarda</li>
+                                <li>Pensão</li>
+                                <li>Adoção</li>
+                            </ul>
+                            <button class="service-btn" onclick="scrollToSection('#contact')">
+                                Saiba Mais
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="car"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito de Trânsito</h3>
+                            <p class="service-description">Multas, suspensão de CNH e acidentes de trânsito.</p>
+                            <ul class="service-features">
+                                <li>Multas</li>
+                                <li>CNH</li>
+                                <li>Acidentes</li>
+                                <li>Recursos</li>
+                            </ul>
+                            <button class="service-btn" onclick="scrollToSection('#contact')">
+                                Saiba Mais
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i data-lucide="home"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Imobiliário</h3>
+                            <p class="service-description">Compra, venda, locação e regularização de imóveis.</p>
+                            <ul class="service-features">
+                                <li>Compra/Venda</li>
+                                <li>Locação</li>
+                                <li>Usucapião</li>
+                                <li>Regularização</li>
+                            </ul>
+                            <button class="service-btn" onclick="scrollToSection('#contact')">
+                                Saiba Mais
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-cta">
+                    <div class="cta-card">
+                        <h3>Não encontrou o que procura?</h3>
+                        <p>Entre em contato conosco para uma consulta personalizada sobre seu caso específico.</p>
+                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
+                            Consulta Gratuita
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="badge">Sobre Nós</div>
+                        <h2 class="section-title">
+                            Tradição e inovação no
+                            <span class="subtitle">atendimento jurídico</span>
+                        </h2>
+                        <p class="about-description">
+                            Fundado em 2008, nosso escritório nasceu com o propósito de oferecer 
+                            serviços jurídicos de excelência, combinando tradição, experiência e 
+                            inovação para atender às necessidades de nossos clientes.
+                        </p>
+                        <p class="about-description">
+                            Nossa equipe é formada por profissionais altamente qualificados, 
+                            especializados em diversas áreas do direito, sempre comprometidos 
+                            em defender os interesses de nossos clientes com ética e dedicação.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="about-stat-number">15+</div>
+                                <div class="about-stat-label">Anos de Experiência</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">500+</div>
+                                <div class="about-stat-label">Casos Ganhos</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">1000+</div>
+                                <div class="about-stat-label">Clientes Satisfeitos</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-number">98%</div>
+                                <div class="about-stat-label">Taxa de Sucesso</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#team')">
+                            Conheça Nossa Equipe
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i data-lucide="check-circle"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Excelência</h3>
+                                <p>Compromisso com a qualidade em todos os serviços prestados.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i data-lucide="users-2"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Proximidade</h3>
+                                <p>Relacionamento próximo e personalizado com cada cliente.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i data-lucide="trophy"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Resultados</h3>
+                                <p>Foco em alcançar os melhores resultados para nossos clientes.</p>
+                            </div>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="value-content">
+                                <h3>Agilidade</h3>
+                                <p>Atendimento rápido e eficiente em todas as demandas.</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <i data-lucide="quote" class="quote-icon"></i>
+                                <p class="testimonial-text">
+                                    "Excelente atendimento! Profissionais competentes que me ajudaram 
+                                    a resolver uma questão trabalhista complexa. Recomendo fortemente."
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">M</div>
+                                    <div class="author-info">
+                                        <div class="author-name">Maria Santos</div>
+                                        <div class="author-role">Cliente desde 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Nossa Equipe</div>
+                    <h2 class="section-title">Profissionais Qualificados</h2>
+                    <p class="section-description">
+                        Conheça nossa equipe de advogados especialistas, comprometidos em 
+                        oferecer as melhores soluções jurídicas para você.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                    <div class="team-image">
+                        <img src="searce/page_1.png" alt="Dra. Valéria Penha">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="team-name">Dra. Valéria Penha</h3>
+                        <p class="team-role">Fundadora</p>
+                        <div class="team-badge">Direito previdencialista e trabalhista</div>
+                        <div class="team-info">
+                            <div class="team-experience">
+                                <i data-lucide="graduation-cap"></i>
+                                <span>12 anos</span>
+                            </div>
+                            <p class="team-education">Especialista em Direito previdnciário - UNIFEOB</p>
+                        </div>
+                        <div class="team-actions">
+                            <button class="team-contact-btn" onclick="window.location.href='mailto:ana.carolina@advocaciasilva.com.br'">
+                                <i data-lucide="mail"></i>
+                            </button>
+                            <button class="team-contact-btn">
+                                <i data-lucide="linkedin"></i>
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="" alt="?">
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">?</h3>
+                            <p class="team-role">Advogado Associado</p>
+                            <div class="team-badge">Especialidade</div>
+                            <div class="team-info">
+                                <div class="team-experience">
+                                    <i data-lucide="graduation-cap"></i>
+                                    <span>8 anos</span>
+                                </div>
+                                <p class="team-education">Formação</p>
+                            </div>
+                            <div class="team-actions">
+                                <button class="team-contact-btn" onclick="window.location.href='mailto:carlos.mendes@advocaciasilva.com.br'">
+                                    <i data-lucide="mail"></i>
+                                </button>
+                                <button class="team-contact-btn">
+                                    <i data-lucide="linkedin"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-cta">
+                    <div class="cta-card">
+                        <h3>Precisa de consultoria jurídica especializada?</h3>
+                        <p>Nossa equipe está pronta para analisar seu caso e oferecer as melhores 
+                        soluções jurídicas. Entre em contato e agende uma consulta.</p>
+                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
+                            Falar com Especialista
+                            <i data-lucide="arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Contato</div>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-description">
+                        Estamos prontos para ajudar você. Entre em contato e agende 
+                        uma consulta gratuita para discutir seu caso.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Endereço Fisico</h3>
+                                <p> Praça João Pinheiro  171</p>
+                                <p> Centro, Pouso Alegre - MG</p>
+                                <p>CEP:37550-000</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefones</h3>
+                                <p>(11) 99999-9999</p>
+                                <p>(11) 3333-4444</p>
+                                <p>WhatsApp: (11) 99999-9999</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>E-mail</h3>
+                                <p>escritoriovirtual.vp@outlook.com.br</p>
+                        
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i data-lucide="clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Horário de Atendimento</h3>
+                                <p>Segunda a Sexta: 8h às 18h</p>
+                                <p>Sábado: 8h às 12h</p>
+                                <p>Emergências: 24h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-actions">
+                            <button class="btn btn-whatsapp btn-full" onclick="window.open('https://wa.me/5535998943460', '_blank')">
+                                <i data-lucide="phone"></i>
+                                WhatsApp: Atendimento Rápido
+                            </button>
+                            <button class="btn btn-outline btn-full" onclick="window.location.href='mailto:contato@advocaciasilva.com.br'">
+                                <i data-lucide="mail"></i>
+                                E-mail: Consulta Detalhada
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <div class="contact-form-card">
+                            <h3>Envie sua Mensagem</h3>
+                            <p>Preencha o formulário abaixo e entraremos em contato em até 24 horas.</p>
+                            
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name">Nome Completo *</label>
+                                        <input type="text" id="name" name="name" required placeholder="Seu nome completo" minlength="2">
+                                        <div class="error-message" id="nameError"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail *</label>
+                                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                                        <div class="error-message" id="emailError"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Telefone</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
+                                        <div class="error-message" id="phoneError"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Assunto *</label>
+                                        <input type="text" id="subject" name="subject" required placeholder="Assunto da consulta" minlength="3">
+                                        <div class="error-message" id="subjectError"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Mensagem *</label>
+                                    <textarea id="message" name="message" required rows="6" placeholder="Descreva detalhadamente sua situação jurídica..." minlength="10"></textarea>
+                                    <div class="error-message" id="messageError"></div>
+                                </div>
+
+                                <div class="form-check">
+                                    <i data-lucide="check-circle"></i>
+                                    <span>Consulta inicial gratuita</span>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-full btn-large" id="submitBtn">
+                                    <span id="btnText">
+                                        <i data-lucide="send"></i>
+                                        Enviar Mensagem
+                                    </span>
+                                    <span id="btnLoading" style="display: none;">
+                                        <i data-lucide="loader-2" class="loading-icon"></i>
+                                        Enviando...
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <i data-lucide="map-pin"></i>
+                            <p> Praça João Pinheiro 171 <br> Centro, Pouso Alegre - MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-company">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i data-lucide="scale"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h3>Valeria Penha advocacia</h3>
+                            <p>Soluções Jurídicas</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Mais de 12 anos oferecendo soluções jurídicas especializadas 
+                        com excelência, ética e compromisso com nossos clientes.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#team">Equipe</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h4>Áreas de Atuação</h4>
+                    <ul>
+                        <li><a href="#services">Direito Civil</a></li>
+                        <li><a href="#services">Direito Trabalhista</a></li>
+                        <li><a href="#services">Direito Empresarial</a></li>
+                        <li><a href="#services">Direito de Família</a></li>
+                        <li><a href="#services">Direito de Trânsito</a></li>
+                        <li><a href="#services">Direito Imobiliário</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <p> Praça João Pinheiro 171</p>
+                                <p>Centro, Pouso Alegre - MG</p>
+                                <p>CEP: 37550-000</p>
+                            </div>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="phone"></i>
+                            <span>(35) 99894-3460</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="mail"></i>
+                            <span>advocaciavirtual.vp@outlook.com.br</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <p>Seg-Sex: 8h às 18h</p>
+                                <p>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 advocacia virtual. Todos os direitos reservados.</p>
+                        <div class="footer-links">
+                            <a href="#">Política de Privacidade</a>
+                            <a href="#">Termos de Uso</a>
+                        </div>
+                    </div>
+                    <button class="back-to-top" id="backToTop">
+                        <i data-lucide="arrow-up"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i data-lucide="check-circle"></i>
+            <div class="toast-text">
+                <div class="toast-title">Mensagem enviada com sucesso!</div>
+                <div class="toast-description">Entraremos em contato em até 24 horas.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
