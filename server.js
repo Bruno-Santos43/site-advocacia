@@ -243,8 +243,8 @@ app.use((req, res) => {
 });
 
 // Inicialização do servidor
-app.listen(PORT, () => {
-    console.log(`🌐 Servidor rodando em http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`🌐 Servidor rodando em http://localhost:${PORT} e acessível na rede`);
     console.log(`📧 E-mail configurado para: ${config.email.user}`);
     console.log(`🔧 Ambiente: ${process.env.NODE_ENV || 'development'}`);
     console.log(`📊 Health check: http://localhost:${PORT}/health`);

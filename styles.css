@@ -504,6 +504,17 @@ p {
     background-color: var(--white);
 }
 
+.service-card.direito-bancario {
+    position: relative;
+    padding-bottom: 3rem; /* espaço extra para o botão */
+}
+
+.service-card.direito-bancario .service-link {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
 .section-header {
     text-align: center;
     margin-bottom: var(--spacing-16);
@@ -541,7 +552,7 @@ p {
 
 @media (min-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -550,7 +561,7 @@ p {
     background-color: var(--white);
     border: 1px solid var(--gray-200);
     border-radius: var(--radius-xl);
-    padding: var(--spacing-6);
+    padding: var(--spacing-4);
     transition: var(--transition-slow);
     cursor: pointer;
 }
@@ -578,15 +589,15 @@ p {
 }
 
 .service-icon {
-    width: 56px;
-    height: 56px;
+    width: 48px;
+    height: 48px;
     background-color: var(--gray-100);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--gray-700);
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-3);
     transition: var(--transition);
 }
 
@@ -598,16 +609,16 @@ p {
 .service-content {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-4);
+    gap: var(--spacing-3);
 }
 
 .service-title {
-    font-size: var(--font-size-xl);
-    margin-bottom: var(--spacing-2);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-1);
 }
 
 .service-description {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
     color: var(--gray-600);
 }
 
@@ -635,26 +646,49 @@ p {
     flex-shrink: 0;
 }
 
-.service-btn {
-    display: flex;
+.service-link {
+    display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: var(--spacing-3) 0;
-    background: none;
-    border: none;
-    color: var(--gray-700);
+    gap: var(--spacing-1);
     font-weight: 500;
+    color: var(--gray-700);
+    text-decoration: none;
     cursor: pointer;
     transition: var(--transition);
+    font-size: var(--font-size-sm);
+    margin-top: 0;
 }
 
-.service-btn:hover {
+.service-link:hover {
     color: var(--primary);
 }
 
-.service-btn:hover i {
+.service-link:hover i {
     transform: translateX(4px);
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-2);
+}
+
+.service-features li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: var(--gray-400);
+    border-radius: var(--radius-full);
+    flex-shrink: 0;
 }
 
 .services-cta {
@@ -846,19 +880,13 @@ p {
 
 @media (min-width: 768px) {
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -1030,6 +1058,19 @@ p {
 
 .contact-details p:last-child {
     margin-bottom: 0;
+}
+
+/* Reset contact cards background and text color to be like others */
+.contact-card:nth-child(1),
+.contact-card:nth-child(4) {
+    background-color: var(--white);
+}
+
+.contact-card:nth-child(1) .contact-details h3,
+.contact-card:nth-child(1) .contact-details p,
+.contact-card:nth-child(4) .contact-details h3,
+.contact-card:nth-child(4) .contact-details p {
+    color: var(--gray-600);
 }
 
 .contact-actions {
@@ -1247,7 +1288,7 @@ p {
     display: flex;
     align-items: flex-start;
     gap: var(--spacing-3);
-    color: var(--gray-300);
+    color: var(--white);
     font-size: var(--font-size-sm);
 }
 
@@ -1255,6 +1296,19 @@ p {
     color: var(--gray-400);
     margin-top: 2px;
     flex-shrink: 0;
+}
+
+/* Make address and schedule information white in footer */
+.footer-contact-item:nth-child(3),
+.footer-contact-item:nth-child(4) {
+    color: var(--white);
+}
+
+/* Ensure all footer contact text is a consistent gray tone for better design */
+.footer-contact-item p,
+.footer-contact-item span,
+.footer-contact-item a {
+    color: var(--gray-400) !important;
 }
 
 .footer-bottom {
