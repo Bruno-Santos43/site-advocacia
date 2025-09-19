@@ -175,6 +175,29 @@ p {
     background-color: #16a34a;
 }
 
+.btn-whatsapp i[data-lucide="phone"] {
+    color: white;
+    margin-left: var(--spacing-2);
+}
+
+.btn-whatsapp img[alt="Icone whatsaap"] {
+    position: relative;
+    left: -10px;
+    filter: brightness(0) invert(1);
+}
+
+.btn-outline img[alt="Icone e-mail"] {
+    position: relative;
+    left: -25px;
+}
+
+/* Ícones de balança no header e footer */
+.logo-icon img[alt="icone balança"],
+.footer-company .logo-icon img[alt="icone balança"],
+.footer-company .logo-icon .fas.fa-balance-scale {
+    filter: brightness(0) invert(1);
+}
+
 .btn-large {
     padding: var(--spacing-4) var(--spacing-8);
     font-size: var(--font-size-base);
@@ -606,6 +629,10 @@ p {
     color: var(--white);
 }
 
+.service-card:hover .service-icon img {
+    filter: brightness(0) invert(1);
+}
+
 .service-content {
     display: flex;
     flex-direction: column;
@@ -794,6 +821,11 @@ p {
     justify-content: center;
     color: var(--gray-700);
     flex-shrink: 0;
+    transition: transform 0.2s ease;
+}
+
+.value-icon:hover {
+    transform: scale(1.1);
 }
 
 .value-content h3 {
@@ -1158,6 +1190,10 @@ p {
     font-size: var(--font-size-sm);
 }
 
+.form-check img {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
 .contact-map {
     margin-top: var(--spacing-16);
 }
@@ -1226,12 +1262,18 @@ p {
     gap: var(--spacing-4);
 }
 
+.social-link img {
+    filter: brightness(0) invert(1); /* make SVG images white */
+}
+.social-link i {
+    color: white !important; /* force white color on Lucide icons */
+}
 .social-link {
     width: 40px;
     height: 40px;
     background: none;
     border: none;
-    color: var(--gray-400);
+    color: white !important; /* force white color */
     display: flex;
     align-items: center;
     justify-content: center;
