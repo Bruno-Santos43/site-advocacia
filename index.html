@@ -1,5 +1,5 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+ <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons Local -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Lucide Icons Script Local -->
+    <script src="assets/lucide/lucide.min.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -28,9 +34,9 @@
             <div class="header-content">
                 <!-- Logo -->
                 <div class="logo">
-                    <div class="logo-icon">
-                        <i data-lucide="scale"></i>
-                    </div>
+<div class="logo-icon">
+    <img src="assets/icon/scale-balanced-regular-full.svg" alt="icone balança" width="24" height="24" viewBox="0 0 640 640" fill="currentColor"><!--!Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M520 112L393.3 112C381 83.7 352.8 64 320 64C287.2 64 259 83.7 246.7 112L120 112C106.7 112 96 122.7 96 136C96 149.3 106.7 160 120 160L241.6 160C247.4 188.6 268.5 211.7 296 220.3L296 528L120 528C106.7 528 96 538.7 96 552C96 565.3 106.7 576 120 576L520 576C533.3 576 544 565.3 544 552C544 538.7 533.3 528 520 528L344 528L344 220.3C371.5 211.7 392.6 188.6 398.4 160L520 160C533.3 160 544 149.3 544 136C544 122.7 533.3 112 520 112zM512 259.8L584.4 384L439.6 384L512 259.8zM386 401.1C396.8 446 449.1 480 512 480C574.9 480 627.2 446 638 401.1C640.6 390.1 637 378.8 631.3 369L536.1 205.8C531.1 197.2 521.9 192 512 192C502.1 192 492.9 197.3 487.9 205.8L392.7 369.1C387 378.9 383.4 390.2 386 401.2zM54.4 384L126.8 259.8L199.2 384L54.3 384zM126.8 480C189.7 480 242 446 252.8 401.1C255.4 390.1 251.8 378.8 246.1 369L150.9 205.8C145.9 197.2 136.7 192 126.8 192C116.9 192 107.7 197.3 102.7 205.8L7.6 369.1C1.9 378.8-1.8 390.1 .9 401.1C11.7 446 64 480 126.8 480zM320 112C337.7 112 352 126.3 352 144C352 161.7 337.7 176 320 176C302.3 176 288 161.7 288 144C288 126.3 302.3 112 320 112z"/></svg>
+</div>
                     <div class="logo-text">
                         <h1> Valéria Penha Advocacia</h1>
                         <p>Soluções Jurídicas</p>
@@ -48,10 +54,10 @@
 
                 <!-- Contact Info & CTA -->
                 <div class="header-actions">
-                    <div class="header-phone">
-                        <i data-lucide="phone"></i>
-                        <span>(35) 99879-1593 </span>
-                    </div>
+<div class="header-phone" style="display: flex; align-items: center;">
+    <img src="assets/icon/phone-regular-full.svg" alt="Ícone Telefone" width="28" height="28" />
+    <span style="margin-left: 8px;">(35) 99879-1593 </span>
+</div>
                     <button class="btn btn-primary" onclick="scrollToSection('#contact')">
                         Consulta Gratuita
                     </button>
@@ -59,7 +65,7 @@
 
                 <!-- Mobile Menu Button -->
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i data-lucide="menu"></i>
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
@@ -110,7 +116,7 @@
                         <div class="hero-actions">
                             <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
                                 Agendar Consulta
-                                <i data-lucide="arrow-right"></i>
+                                <i class="fas fa-arrow-right"></i>
                             </button>
                             <button class="btn btn-outline btn-large" onclick="scrollToSection('#services')">
                                 Nossos Serviços
@@ -119,42 +125,42 @@
 
                         <div class="hero-stats">
                             <div class="stat-item">
-                                <div class="stat-icon">
-                                    <i data-lucide="shield"></i>
-                                </div>
-                                <div class="stat-number">500+</div>
-                                <div class="stat-label">Casos Ganhos</div>
+                            <div class="stat-icon">
+                                <img src="assets/icon/shield-regular-full.svg" alt="Ícone Escudo" width="36" height="36" />
                             </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <i data-lucide="users"></i>
-                                </div>
-                                <div class="stat-number">1000+</div>
-                                <div class="stat-label">Clientes Atendidos</div>
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Casos Ganhos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <img src="assets/icon/people-group-light-full.svg" alt="Ícone Usuários" width="36" height="36" />
                             </div>
-                            <div class="stat-item">
-                                <div class="stat-icon">
-                                    <i data-lucide="award"></i>
-                                </div>
-                                <div class="stat-number">12+</div>
-                                <div class="stat-label">Anos de Experiência</div>
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">Clientes Atendidos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">
+                                <img src="assets/icon/award-regular-full (1).svg" alt="Icone Usuários" width="36" height="36" />
                             </div>
+                            <div class="stat-number">12+</div>
+                            <div class="stat-label">Anos de Experiência</div>
+                        </div>
                         </div>
                     </div>
 
                     <div class="hero-image">
                         <div class="hero-img-container">
-                            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Escritório de Advocacia">
+                            <img src="searce/fotoinicial.png" alt="Escritório de Advocacia">
                         </div>
                         <div class="hero-card">
                             <div class="hero-card-content">
-                                <div class="hero-card-icon">
-                                    <i data-lucide="shield"></i>
-                                </div>
-                                <div class="hero-card-text">
-                                    <div class="hero-card-title">Atendimento 24h</div>
-                                    <div class="hero-card-subtitle">Emergências jurídicas</div>
-                                </div>
+                        <div class="hero-card-icon">
+<img src="assets/icon/shield-halved-solid-full.svg" alt="Ícone Escudo" width="36" height="36" />
+                        </div>
+                        <div class="hero-card-text">
+                            <div class="hero-card-title"><i class="fas fa-clock"></i> Atendimento 24h</div>
+                            <div class="hero-card-subtitle"><i class="fas fa-exclamation-triangle"></i> Emergências jurídicas</div>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -178,7 +184,7 @@
                     <div class="service-card popular">
                         <div class="service-badge">Popular</div>
                         <div class="service-icon">
-                            <i data-lucide="scale"></i>
+                            <img src="assets/icon/file-contract-light-full.svg" alt="Ícone Arquivo" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito Civil</h3>
@@ -198,7 +204,7 @@
 
                     <div class="service-card">
                         <div class="service-icon">
-                            <i data-lucide="briefcase"></i>
+                            <img src="assets/icon/briefcase-regular-full.svg" alt="Ícone Pasta" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito Trabalhista</h3>
@@ -218,7 +224,7 @@
 
                     <div class="service-card">
                         <div class="service-icon">
-                            <i data-lucide="building"></i>
+                            <img src="assets/icon/handshake-light-full.svg" alt="Ícone Handshake" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito Empresarial</h3>
@@ -239,7 +245,7 @@
                     <div class="service-card popular">
                         <div class="service-badge">Popular</div>
                         <div class="service-icon">
-                            <i data-lucide="heart"></i>
+                            <img src="assets/icon/users-regular-full.svg" alt="Ícone Usuários" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito de Família</h3>
@@ -259,7 +265,7 @@
 
                     <div class="service-card">
                         <div class="service-icon">
-                            <i data-lucide="truck"></i>
+                            <img src="assets/icon/car-light-full.svg" alt="Ícone Carro" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito de Trânsito</h3>
@@ -279,7 +285,7 @@
 
                     <div class="service-card">
                         <div class="service-icon">
-                            <i data-lucide="home"></i>
+                            <img src="assets/icon/building-light-full.svg" alt="Ícone Building" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito Imobiliário</h3>
@@ -299,7 +305,7 @@
 
                     <div class="service-card">
                         <div class="service-icon">
-                            <i data-lucide="building"></i>
+                            <img src="assets/icon/landmark-light-full.svg" alt="Ícone Landmark" width="36" height="36" />
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Direito Bancário</h3>
@@ -317,24 +323,24 @@
                         </div>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i data-lucide="user-check"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Previdenciário</h3>
-                            <p class="service-description">Analíses e Revisões de aposentadorias.</p>
-                            <ul class="service-features">
-                                <li>Aposentadorias em geral</li>
-                                <li>Auxílio pessoas com deficiência - PCD</li>
-                                <li>Aposentadoria Especial</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
+<div class="service-card">
+    <div class="service-icon">
+        <img src="assets/icon/person-cane-light-full.svg" alt="Ícone Person Cane" width="36" height="36" />
+    </div>
+    <div class="service-content">
+        <h3 class="service-title">Direito Previdenciário</h3>
+        <p class="service-description">Analíses e Revisões de aposentadorias.</p>
+        <ul class="service-features">
+            <li>Aposentadorias em geral</li>
+            <li>Auxílio pessoas com deficiência - PCD</li>
+            <li>Aposentadoria Especial</li>
+        </ul>
+        <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
+            Saiba Mais
+            <i data-lucide="arrow-right"></i>
+        </a>
+    </div>
+</div>
                 </div>
 
                 <div class="services-cta">
@@ -398,18 +404,18 @@
 
                     <div class="about-cards">
                         <div class="value-card">
-                            <div class="value-icon">
-                                <i data-lucide="check-circle"></i>
-                            </div>
-                            <div class="value-content">
-                                <h3>Excelência</h3>
-                                <p>Compromisso com a qualidade em todos os serviços prestados.</p>
-                            </div>
+                        <div class="value-icon">
+                            <img src="assets/icon/icons8-selecionado.svg" alt="Ícone Excelência" width="28" height="28" />
+                        </div>
+                        <div class="value-content">
+                            <h3>Excelência</h3>
+                            <p>Compromisso com a qualidade em todos os serviços prestados.</p>
+                        </div>
                         </div>
 
                         <div class="value-card">
                             <div class="value-icon">
-                                <i data-lucide="users-2"></i>
+                                <img src="assets/icon/users-viewfinder-light-full.svg" alt="Ícone Proximidade" width="28" height="28" />
                             </div>
                             <div class="value-content">
                                 <h3>Proximidade</h3>
@@ -419,7 +425,7 @@
 
                         <div class="value-card">
                             <div class="value-icon">
-                                <i data-lucide="trophy"></i>
+                                <img src="assets/icon/trophy-light-full.svg" alt="Ícone Resultados" width="28" height="28" />
                             </div>
                             <div class="value-content">
                                 <h3>Resultados</h3>
@@ -429,7 +435,7 @@
 
                         <div class="value-card">
                             <div class="value-icon">
-                                <i data-lucide="clock"></i>
+                                <img src="assets/icon/clock-regular-full.svg" alt="Ícone Agilidade" width="28" height="28" />
                             </div>
                             <div class="value-content">
                                 <h3>Agilidade</h3>
@@ -439,7 +445,7 @@
 
                         <div class="testimonial-card">
                             <div class="testimonial-content">
-                                <i data-lucide="quote" class="quote-icon"></i>
+                                <img src="assets/icon/pen-to-square-light-full (1).svg" alt="Icone comentário" width="28" height="28" />
                                 <p class="testimonial-text">
                                     "Excelente atendimento! Profissionais competentes que me ajudaram 
                                     a resolver uma questão trabalhista complexa. Recomendo fortemente."
@@ -482,6 +488,7 @@
                         <div class="team-info">
                             <div class="team-experience">
                                 <i data-lucide="graduation-cap"></i>
+                                <img src="assets/icon/graduation-cap-solid-full.svg" alt="Chapeu Graduação" width="20" height="20" />
                                 <span>12 anos</span>
                             </div>
                             <p class="team-education">Especialista em Direito Previdnciário - UNIFEOB</p>
@@ -505,6 +512,7 @@
                             <div class="team-info">
                                 <div class="team-experience">
                                     <i data-lucide="graduation-cap"></i>
+                                    <img src="assets/icon/graduation-cap-solid-full.svg" alt="Chapeu Graduação" width="20" height="20" />
                                     <span>26 anos</span>
                                 </div>
                                 <p class="team-education">Especialista em Direito Trabalhista - FDSM</p>
@@ -528,6 +536,7 @@
                             <div class="team-info">
                                 <div class="team-experience">
                                     <i data-lucide="graduation-cap"></i>
+                                    <img src="assets/icon/graduation-cap-solid-full.svg" alt="Chapeu Graduação" width="20" height="20" />
                                     <span> 6 anos</span>
                                 </div>
                                 <p class="team-education">Especialista em Direito Bancário e Médico - FDSM</p>
@@ -571,9 +580,11 @@
                     <div class="contact-info">
                         <div class="contact-card">
                             <div class="contact-icon">
+                                <img src="assets/icon/location-dot-regular-full.svg" alt="Icone Localização" width="28" height="28" />
                                 <i data-lucide="map-pin"></i>
                             </div>
                             <div class="contact-details">
+                                
                                 <h3>Endereço Fisico</h3>
                                 <p> Praça João Pinheiro  171</p>
                                 <p> Centro, Pouso Alegre - MG</p>
@@ -583,6 +594,7 @@
 
                         <div class="contact-card">
                             <div class="contact-icon">
+                                <img src="assets/icon/phone-regular-full.svg" alt="Icone telefone" width="28" height="28" />
                                 <i data-lucide="phone"></i>
                             </div>
                             <div class="contact-details">
@@ -594,6 +606,7 @@
 
                         <div class="contact-card">
                             <div class="contact-icon">
+                                 <img src="assets/icon/envelope-regular-full.svg" alt="Icone ENVELOPE" width="28" height="28" />
                                 <i data-lucide="mail"></i>
                             </div>
                             <div class="contact-details">
@@ -605,6 +618,7 @@
 
                         <div class="contact-card">
                             <div class="contact-icon">
+                                <img src="assets/icon/clock-regular-full.svg" alt="Icone relogio" width="28" height="28" />
                                 <i data-lucide="clock"></i>
                             </div>
                             <div class="contact-details">
@@ -616,11 +630,14 @@
                         </div>
 
                         <div class="contact-actions">
+                            
                             <button class="btn btn-whatsapp btn-full" onclick="window.open('https://wa.me/5535998791593', '_blank')">
+                                <img src="assets/icon/whatsapp-brands-solid-full.svg" alt="Icone whatsaap" width="37" height="37" />
                                 <i data-lucide="phone"></i>
                                 WhatsApp: Atendimento Rápido
                             </button>
                             <button class="btn btn-outline btn-full" onclick="window.location.href='mailto:contato@advocaciasilva.com.br'">
+                                <img src="assets/icon/envelope-regular-full.svg" alt="Icone e-mail" width="37" height="37" />
                                 <i data-lucide="mail"></i>
                                 E-mail: Consulta Detalhada
                             </button>
@@ -666,6 +683,7 @@
                                 </div>
 
                                 <div class="form-check">
+                                    <img src="assets/icon/circle-check-regular-full.svg" alt="icone ciclo chek" width="25" height="25" />
                                     <i data-lucide="check-circle"></i>
                                     <span>Consulta inicial gratuita</span>
                                 </div>
@@ -689,6 +707,7 @@
                     <div class="map-placeholder">
                         <div class="map-content">
                             <i data-lucide="map-pin"></i>
+                            <img src="assets/icon/location-dot-regular-full.svg" alt="Icone Localização" width="50" height="50" />
                             <p> Praça João Pinheiro 171 <br> Centro, Pouso Alegre - MG</p>
                         </div>
                     </div>
@@ -703,9 +722,10 @@
             <div class="footer-content">
                 <div class="footer-company">
                     <div class="logo">
-                        <div class="logo-icon">
-                            <i data-lucide="scale"></i>
-                        </div>
+<div class="logo-icon">
+    <i class="fas fa-balance-scale" style="font-size: 2.5rem;"></i>
+    <img src="assets/icon/scale-balanced-regular-full.svg" alt="icone balança" width="24" height="24" viewBox="0 0 640 640" fill="width">
+</div>
                         <div class="logo-text">
                             <h3>Valeria Penha advocacia</h3>
                             <p>Soluções Jurídicas</p>
@@ -716,14 +736,14 @@
                         com excelência, ética e compromisso com nossos clientes.
                     </p>
                     <div class="social-links">
-                        <a href="https://www.facebook.com/me/" class="social-link" target="_blank">
-                            <i data-lucide="facebook"></i>
+                        <a href="https://www.facebook.com/profile.php?id=61569272073851" class="social-link" target="_blank">
+                            <img src="assets/icon/facebook-brands-solid-full.svg" alt="Facebook" width="30" height="30" />
                         </a>
-                        <a href="https://www.instagram.com/?__pwa=1" class="social-link" target="_blank">
-                            <i data-lucide="instagram"></i>
+                        <a href="https://www.instagram.com/valeriacpenha/?__pwa=1" class="social-link" target="_blank">
+                            <img src="assets/icon/instagram-brands-solid-full.svg" alt="Instagram" width="30" height="30" />
                         </a>
-                        <a href="#" class="social-link">
-                            <i data-lucide="linkedin"></i>
+                        <a href="https://www.tiktok.com" class="social-link" target="_blank">
+                            <img src="assets/icon/tiktok-brands-solid-full.svg" alt="TikTok" width="30" height="30" />
                         </a>
                     </div>
                 </div>
