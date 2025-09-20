@@ -323,7 +323,7 @@ class LawOfficeWebsite {
         try {
             console.log('📤 Enviando formulário para o servidor...');
 
-            const response = await fetch('http://localhost:8000/contato.php', {
+            const response = await fetch('contato.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
