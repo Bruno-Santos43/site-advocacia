@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP | Advocacia - Soluções Jurídicas Premium</title>
+    <meta name="description" content="Escritório de advocacia premium com serviços especializados. Mais de 12 anos de experiência.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@900&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Local -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons -->
+    <script src="assets/lucide/lucide.min.js"></script>
+</head>
+<body>
+    <!-- HEADER COMPLETO -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo VP Premium -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <img src="searce/logo.jpeg" alt="Logo VP Advocacia" />
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-title">
+                            <span class="vp">VP</span>
+                            <span class="separator"> | </span>
+                            <span class="advocacia">Advocacia</span>
+                        </div>
+                        <p>Soluções Jurídicas Premium</p>
+                    </div>
+                </div>
+
+                <!-- Navegação Desktop -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Início</a>
+                    <a href="#services" class="nav-link">Serviços</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#team" class="nav-link">Equipe</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </nav>
+
+                <!-- WhatsApp Header -->
+                <div class="header-actions">
+                    <a href="https://wa.me/5535998791593" class="btn btn-whatsapp header-whatsapp" target="_blank">
+                        <img src="assets/icon/whatsapp-brands-solid-full.svg" alt="WhatsApp" />
+                        <span>(35) 99879-1593</span>
+                    </a>
+                </div>
+
+                <!-- Botão Mobile Menu -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Início</a>
+                <a href="#services" class="mobile-nav-link">Serviços</a>
+                <a href="#about" class="mobile-nav-link">Sobre</a>
+                <a href="#team" class="mobile-nav-link">Equipe</a>
+                <a href="#contact" class="mobile-nav-link">Contato</a>
+                <div class="mobile-menu-footer">
+                    <button class="btn btn-primary btn-full" onclick="scrollToSection('#contact')">
+                        Consulta Gratuita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO/HOME -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="badge">12+ Anos de Excelência</div>
+                        <h1 class="hero-title">
+                            Soluções Jurídicas
+                            <span class="hero-subtitle">que Fazem a Diferença</span>
+                        </h1>
+                        <p class="hero-description">
+                            Escritório premium especializado em direito com foco em resultados. Atendimento 
+                            personalizado para pessoas e empresas que exigem o melhor.
+                        </p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
+                                Agendar Consulta Gratuita
+                            </button>
+                            <button class="btn btn-outline btn-large" onclick="scrollToSection('#services')">
+                                Ver Serviços Premium
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="searce/fotoinicial.png" alt="Advocacia Premium" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO SERVICES PREMIUM (MANTER ATUAL) -->
+        <section id="services" class="services servicos-premium">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Áreas de Atuação Premium</div>
+                    <h2 class="section-title">Serviços Jurídicos Especializados</h2>
+                    <p class="section-description">
+                        Soluções completas em diversas áreas do direito com foco na qualidade premium.
+                    </p>
+                </div>
+
+                <!-- Linha 1 - 4 Cards (mantidos) -->
+                <div class="services-grid">
+                    <div class="service-card popular">
+                        <div class="service-badge">Popular</div>
+                        <div class="service-icon">
+                            <img src="assets/icon/file-contract-light-full.svg" alt="Direito Civil" />
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Civil</h3>
+                            <p class="service-description">Contratos, responsabilidade civil, direitos reais.</p>
+                            <ul class="service-features">
+                                <li>Contratos</li>
+                                <li>Indenizações</li>
+                                <li>Propriedade</li>
+                                <li>Sucessões</li>
+                            </ul>
+                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
+                                Saiba Mais <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icon/briefcase-regular-full.svg" alt="Direito Trabalhista" />
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Trabalhista</h3>
+                            <p class="service-description">Defesa de direitos trabalhistas e previdenciários.</p>
+                            <ul class="service-features">
+                                <li>Rescisões</li>
+                                <li>FGTS</li>
+                                <li>Horas Extras</li>
+                                <li>Aposentadoria</li>
+                            </ul>
+                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
+                                Saiba Mais <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icon/handshake-light-full.svg" alt="Direito Empresarial" />
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito Empresarial</h3>
+                            <p class="service-description">Consultoria para empresas e empreendedores.</p>
+                            <ul class="service-features">
+                                <li>Constituição</li>
+                                <li>Contratos</li>
+                                <li>Tributário</li>
+                                <li>Compliance</li>
+                            </ul>
+                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
+                                Saiba Mais <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-card popular">
+                        <div class="service-badge">Popular</div>
+                        <div class="service-icon">
+                            <img src="assets/icon/users-regular-full.svg" alt="Direito de Família" />
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Direito de Família</h3>
+                            <p class="service-description">Divórcios, guarda, pensão alimentícia e adoção.</p>
+                            <ul class="service-features">
+                                <li>Divórcio</li>
+                                <li>Guarda</li>
+                                <li>Pensão</li>
+                                <li>Adoção</li>
+                            </ul>
+                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
+                                Saiba Mais <i data-lucide="arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="services-cta">
+                    <div class="cta-card">
+                        <h3>Não encontrou sua área?</h3>
+                        <p>Consulta personalizada para seu caso específico.</p>
+                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
+                            Consulta Gratuita
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Sobre Nós</div>
+                    <h2 class="section-title">Excelência Jurídica Premium</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Fundado há mais de 12 anos, nosso escritório combina tradição e inovação no atendimento jurídico premium.</p>
+                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#team')">
+                            Conheça Nossa Equipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section id="team" class="team">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Equipe Premium</div>
+                    <h2 class="section-title">Advogados Especializados</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-image">
+                            <img src="searce/page_1.png" alt="Dra. Valéria Penha" />
+                        </div>
+                        <div class="team-content">
+                            <h3>Dra. Valéria Penha</h3>
+                            <p>Fundadora | Previdenciário</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge">Contato Premium</div>
+                    <h2 class="section-title">Agende Sua Consulta</h2>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <input type="text" name="name" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-full">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 VP Advocacia. Todos os direitos reservados.</p>
+                <button class="back-to-top" id="backToTop">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

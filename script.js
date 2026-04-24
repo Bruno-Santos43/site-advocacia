@@ -13,7 +13,10 @@ class LawOfficeWebsite {
         this.setupSmoothScrolling();
         this.setupToastNotifications();
         this.initializeAnimations();
+        // this.initServicosPremium();
     }
+
+
 
     setupEventListeners() {
         // Mobile menu toggle

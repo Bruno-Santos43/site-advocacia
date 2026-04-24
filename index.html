@@ -1,369 +1,537 @@
-<!DOCTYPE html>
- <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advocacia Virtual</title>
-    <meta name="description" content="Escritório de advocacia com mais de 12 anos de experiência em São Paulo. Oferecemos soluções jurídicas especializadas em diversas áreas do direito.">
-    <meta name="keywords" content="advocacia, advogado, direito civil, direito trabalhista, direito empresarial, São Paulo">
-    
+    <meta
+      name="description"
+      content="Escritório de advocacia com mais de 12 anos de experiência em São Paulo. Oferecemos soluções jurídicas especializadas em diversas áreas do direito."
+    />
+    <meta
+      name="keywords"
+      content="advocacia, advogado, direito civil, direito trabalhista, direito empresarial, São Paulo"
+    />
+
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Merriweather:wght@900&family=Lora:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome Icons Local -->
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Lucide Icons Script Local -->
     <script src="assets/lucide/lucide.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header -->
     <header id="header" class="header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo -->
-                <div class="logo">
-<div class="logo-icon">
-    <img src="assets/icon/scale-balanced-regular-full.svg" alt="icone balança" width="24" height="24" viewBox="0 0 640 640" fill="currentColor"><!--!Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M520 112L393.3 112C381 83.7 352.8 64 320 64C287.2 64 259 83.7 246.7 112L120 112C106.7 112 96 122.7 96 136C96 149.3 106.7 160 120 160L241.6 160C247.4 188.6 268.5 211.7 296 220.3L296 528L120 528C106.7 528 96 538.7 96 552C96 565.3 106.7 576 120 576L520 576C533.3 576 544 565.3 544 552C544 538.7 533.3 528 520 528L344 528L344 220.3C371.5 211.7 392.6 188.6 398.4 160L520 160C533.3 160 544 149.3 544 136C544 122.7 533.3 112 520 112zM512 259.8L584.4 384L439.6 384L512 259.8zM386 401.1C396.8 446 449.1 480 512 480C574.9 480 627.2 446 638 401.1C640.6 390.1 637 378.8 631.3 369L536.1 205.8C531.1 197.2 521.9 192 512 192C502.1 192 492.9 197.3 487.9 205.8L392.7 369.1C387 378.9 383.4 390.2 386 401.2zM54.4 384L126.8 259.8L199.2 384L54.3 384zM126.8 480C189.7 480 242 446 252.8 401.1C255.4 390.1 251.8 378.8 246.1 369L150.9 205.8C145.9 197.2 136.7 192 126.8 192C116.9 192 107.7 197.3 102.7 205.8L7.6 369.1C1.9 378.8-1.8 390.1 .9 401.1C11.7 446 64 480 126.8 480zM320 112C337.7 112 352 126.3 352 144C352 161.7 337.7 176 320 176C302.3 176 288 161.7 288 144C288 126.3 302.3 112 320 112z"/></svg>
-</div>
-                    <div class="logo-text">
-                        <h1> Valéria Penha Advocacia</h1>
-                        <p>Soluções Jurídicas</p>
-                    </div>
-                </div>
-
-                <!-- Desktop Navigation -->
-                <nav class="nav-desktop">
-                    <a href="#home" class="nav-link">Início</a>
-                    <a href="#services" class="nav-link">Serviços</a>
-                    <a href="#about" class="nav-link">Sobre Nós</a>
-                    <a href="#team" class="nav-link">Equipe</a>
-                    <a href="#contact" class="nav-link">Contato</a>
-                </nav>
-
-                <!-- Contact Info & CTA -->
-                <div class="header-actions">
-<div class="header-phone" style="display: flex; align-items: center;">
-    <img src="assets/icon/phone-regular-full.svg" alt="Ícone Telefone" width="28" height="28" />
-    <span style="margin-left: 8px;">(35) 99879-1593 </span>
-</div>
-                    <button class="btn btn-primary" onclick="scrollToSection('#contact')">
-                        Consulta Gratuita
-                    </button>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
+      <div class="container">
+        <div class="header-content">
+          <!-- Logo -->
+          <div class="logo">
+            <div class="logo-icon">
+              <img
+                src="searce/logo.jpeg"
+                alt="Logo Valéria Penha Advocacia"
+                width="24"
+                height="24"
+              />
             </div>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobileMenu">
-            <div class="mobile-menu-content">
-                <a href="#home" class="mobile-nav-link">Início</a>
-                <a href="#services" class="mobile-nav-link">Serviços</a>
-                <a href="#about" class="mobile-nav-link">Sobre Nós</a>
-                <a href="#team" class="mobile-nav-link">Equipe</a>
-                <a href="#contact" class="mobile-nav-link">Contato</a>
-                <div class="mobile-menu-footer">
-                    <div class="mobile-contact">
-                        <i data-lucide="phone"></i>
-                        <span>(35) 99879-1593 </span>
-                    </div>
-                    <div class="mobile-contact">
-                        <i data-lucide="mail"></i>
-                        <span>advocaciavirtual.vp@outlook.com.br</span>
-                        <span>escritoriovirtual04@gmail.com</span>
-                    </div>
-                    <button class="btn btn-primary btn-full" onclick="scrollToSection('#contact')">
-                        Consulta Gratuita
-                    </button>
-                </div>
+            <div class="logo-text">
+              <div class="logo-title">
+                <span class="vp">VP</span><span class="separator"> | </span
+                ><span class="advocacia">Advocacia</span>
+              </div>
+              <p>Soluções Jurídicas para você ou sua empresa</p>
             </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <a href="#home" class="nav-link">Início</a>
+            <a href="#services" class="nav-link">Serviços</a>
+            <a href="#about" class="nav-link">Sobre Nós</a>
+            <a href="#team" class="nav-link">Equipe</a>
+            <a href="#contact" class="nav-link">Contato</a>
+          </nav>
+
+          <!-- Contact Info & CTA -->
+          <div class="header-actions">
+            <a
+              href="https://wa.me/5535998791593"
+              class="btn btn-whatsapp header-whatsapp"
+              target="_blank"
+            >
+              <img
+                src="assets/icon/whatsapp-brands-solid-full.svg"
+                alt="WhatsApp"
+                width="24"
+                height="24"
+              />
+              <span>(35) 99879-1593</span>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+          <a href="#home" class="mobile-nav-link">Início</a>
+          <a href="#services" class="mobile-nav-link">Serviços</a>
+          <a href="#about" class="mobile-nav-link">Sobre Nós</a>
+          <a href="#team" class="mobile-nav-link">Equipe</a>
+          <a href="#contact" class="mobile-nav-link">Contato</a>
+          <div class="mobile-menu-footer">
+            <div class="mobile-contact">
+              <i data-lucide="phone"></i>
+              <span>(35) 99879-1593 </span>
+            </div>
+            <div class="mobile-contact">
+              <i data-lucide="mail"></i>
+              <span>advocaciavirtual.vp@outlook.com.br</span>
+              <span>escritoriovirtual04@gmail.com</span>
+            </div>
+            <button
+              class="btn btn-primary btn-full"
+              onclick="scrollToSection('#contact')"
+            >
+              Consulta Gratuita
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="badge">Mais de 12 anos de experiência</div>
-                        <h1 class="hero-title">
-                            Defendemos seus
-                            <span class="hero-subtitle">direitos com excelência</span>
-                        </h1>
-                        <p class="hero-description">
-                            Somos um escritório de advocacia especializado em diversas áreas do direito, 
-                            oferecendo soluções jurídicas personalizadas com foco na satisfação do cliente.
-                        </p>
-                        
-                        <div class="hero-actions">
-                            <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
-                                Agendar Consulta
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                            <button class="btn btn-outline btn-large" onclick="scrollToSection('#services')">
-                                Nossos Serviços
-                            </button>
-                        </div>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="badge">Mais de 12 anos de experiência</div>
+              <h1 class="hero-title">
+                Defendemos seus
+                <span class="hero-subtitle">direitos com excelência</span>
+              </h1>
+              <p class="hero-description">
+                Somos um escritório de advocacia especializado em diversas áreas
+                do direito, oferecendo soluções jurídicas personalizadas com
+                foco na satisfação do cliente.
+              </p>
 
-                        <div class="hero-stats">
-                            <div class="stat-item">
-                            <div class="stat-icon">
-                                <img src="assets/icon/shield-regular-full.svg" alt="Ícone Escudo" width="36" height="36" />
-                            </div>
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Casos Ganhos</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <img src="assets/icon/people-group-light-full.svg" alt="Ícone Usuários" width="36" height="36" />
-                            </div>
-                            <div class="stat-number">1000+</div>
-                            <div class="stat-label">Clientes Atendidos</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-icon">
-                                <img src="assets/icon/award-regular-full (1).svg" alt="Icone Usuários" width="36" height="36" />
-                            </div>
-                            <div class="stat-number">12+</div>
-                            <div class="stat-label">Anos de Experiência</div>
-                        </div>
-                        </div>
-                    </div>
+              <div class="hero-actions">
+                <button
+                  class="btn btn-primary btn-large"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Agendar Consulta
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <button
+                  class="btn btn-outline btn-large"
+                  onclick="scrollToSection('#services')"
+                >
+                  Nossos Serviços
+                </button>
+              </div>
 
-                    <div class="hero-image">
-                        <div class="hero-img-container">
-                           <img src="searce/fotoinicial.png" alt="Imagem do direito" onerror="this.onerror=null; this.style.display='none'; document.getElementById('hero-error').style.display='block';">
-                           <div id="hero-error" class="error" style="display: none;">
-                               <div class="error-content">
-                                   <i data-lucide="alert-circle"></i>
-                                   <p>Imagem temporariamente indisponível</p>
-                               </div>
-                           </div>
-                        </div>
-                        <div class="hero-card">
-                            <div class="hero-card-content">
-                        <div class="hero-card-icon">
-                          <img src="assets/icon/shield-halved-solid-full.svg" alt="Ícone Escudo" width="36" height="36" />
-                        </div>
-                        <div class="hero-card-text">
-                            <div class="hero-card-title"><i class="fas fa-clock"></i> Atendimento 24h</div>
-                            <div class="hero-card-subtitle"><i class="fas fa-exclamation-triangle"></i> Emergências jurídicas</div>
-                        </div>
-                            </div>
-                        </div>
-                    </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <img
+                      src="assets/icon/shield-regular-full.svg"
+                      alt="Ícone Escudo"
+                      width="36"
+                      height="36"
+                    />
+                  </div>
+                  <div class="stat-number">500+</div>
+                  <div class="stat-label">Casos Ganhos</div>
                 </div>
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <img
+                      src="assets/icon/people-group-light-full.svg"
+                      alt="Ícone Usuários"
+                      width="36"
+                      height="36"
+                    />
+                  </div>
+                  <div class="stat-number">1000+</div>
+                  <div class="stat-label">Clientes Atendidos</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-icon">
+                    <img
+                      src="assets/icon/award-regular-full (1).svg"
+                      alt="Icone Usuários"
+                      width="36"
+                      height="36"
+                    />
+                  </div>
+                  <div class="stat-number">12+</div>
+                  <div class="stat-label">Anos de Experiência</div>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services">
-            <div class="container">
-                <div class="section-header">
-                    <div class="badge">Áreas de Atuação</div>
-                    <h2 class="section-title">Serviços Jurídicos Especializados</h2>
-                    <p class="section-description">
-                        Oferecemos soluções jurídicas completas em diversas áreas do direito, 
-                        sempre com foco na qualidade e na satisfação do cliente.
-                    </p>
+            <div class="hero-image">
+              <div class="hero-img-container">
+                <img
+                  src="searce/fotoinicial.png"
+                  alt="Imagem do direito"
+                  onerror="
+                    this.onerror = null;
+                    this.style.display = 'none';
+                    document.getElementById('hero-error').style.display =
+                      'block';
+                  "
+                />
+                <div id="hero-error" class="error" style="display: none">
+                  <div class="error-content">
+                    <i data-lucide="alert-circle"></i>
+                    <p>Imagem temporariamente indisponível</p>
+                  </div>
                 </div>
-
-                <div class="services-grid">
-                    <div class="service-card popular">
-                        <div class="service-badge">Popular</div>
-                        <div class="service-icon">
-                            <img src="assets/icon/file-contract-light-full.svg" alt="Ícone Arquivo" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito Civil</h3>
-                            <p class="service-description">Contratos, responsabilidade civil, direitos reais e obrigações.</p>
-                            <ul class="service-features">
-                                <li>Contratos</li>
-                                <li>Indenizações</li>
-                                <li>Propriedade</li>
-                                <li>Sucessões</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
+              </div>
+              <div class="hero-card">
+                <div class="hero-card-content">
+                  <div class="hero-card-icon">
+                    <img
+                      src="assets/icon/shield-halved-solid-full.svg"
+                      alt="Ícone Escudo"
+                      width="36"
+                      height="36"
+                    />
+                  </div>
+                  <div class="hero-card-text">
+                    <div class="hero-card-title">
+                      <i class="fas fa-clock"></i> Atendimento 24h
                     </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="assets/icon/briefcase-regular-full.svg" alt="Ícone Pasta" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito Trabalhista</h3>
-                            <p class="service-description">Defesa de direitos trabalhistas e previdenciários.</p>
-                            <ul class="service-features">
-                                <li>Rescisões</li>
-                                <li>FGTS</li>
-                                <li>Horas Extras</li>
-                                <li>Aposentadoria</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
+                    <div class="hero-card-subtitle">
+                      <i class="fas fa-exclamation-triangle"></i> Emergências
+                      jurídicas
                     </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="assets/icon/handshake-light-full.svg" alt="Ícone Handshake" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito Empresarial</h3>
-                            <p class="service-description">Consultoria jurídica para empresas e empreendedores.</p>
-                            <ul class="service-features">
-                                <li>Constituição</li>
-                                <li>Contratos</li>
-                                <li>Tributário</li>
-                                <li>Compliance</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service-card popular">
-                        <div class="service-badge">Popular</div>
-                        <div class="service-icon">
-                            <img src="assets/icon/users-regular-full.svg" alt="Ícone Usuários" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito de Família</h3>
-                            <p class="service-description">Divórcios, guarda, pensão alimentícia e adoção.</p>
-                            <ul class="service-features">
-                                <li>Divórcio</li>
-                                <li>Guarda</li>
-                                <li>Pensão</li>
-                                <li>Adoção</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="assets/icon/car-light-full.svg" alt="Ícone Carro" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito de Trânsito</h3>
-                            <p class="service-description">Defesa em casos de acidentes e infrações de trânsito.</p>
-                            <ul class="service-features">
-                                <li>Acidentes</li>
-                                <li>Infrações</li>
-                                <li>Multas</li>
-                                <li>Recursos</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="assets/icon/building-light-full.svg" alt="Ícone Building" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito Imobiliário</h3>
-                            <p class="service-description">Consultoria em compra, venda e regularização de imóveis.</p>
-                            <ul class="service-features">
-                                <li>Compra e venda</li>
-                                <li>Regularização</li>
-                                <li>Contratos</li>
-                                <li>Usucapião</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="assets/icon/landmark-light-full.svg" alt="Ícone Landmark" width="36" height="36" />
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Direito Bancário</h3>
-                            <p class="service-description"> Analíses e Revisões de Contratos Bancários</p>
-                            <ul class="service-features">
-                                <li>Financiamentos</li>
-                                <li>Empréstimos</li>
-                                <li>Empréstimos consignados</li>
-                                <li>Renegociações</li>
-                            </ul>
-                            <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-                                Saiba Mais
-                                <i data-lucide="arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-
-<div class="service-card">
-    <div class="service-icon">
-        <img src="assets/icon/person-cane-light-full.svg" alt="Ícone Person Cane" width="36" height="36" />
-    </div>
-    <div class="service-content">
-        <h3 class="service-title">Direito Previdenciário</h3>
-        <p class="service-description">Analíses e Revisões de aposentadorias.</p>
-        <ul class="service-features">
-            <li>Aposentadorias em geral</li>
-            <li>Auxílio pessoas com deficiência - PCD</li>
-            <li>Aposentadoria Especial</li>
-        </ul>
-        <a href="#contact" class="service-link" onclick="scrollToSection('#contact')">
-            Saiba Mais
-            <i data-lucide="arrow-right"></i>
-        </a>
-    </div>
-</div>
+                  </div>
                 </div>
-
-                <div class="services-cta">
-                    <div class="cta-card">
-                        <h3>Não encontrou o que procura?</h3>
-                        <p>Entre em contato conosco para uma consulta personalizada sobre seu caso específico.</p>
-                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
-                            Consulta Gratuita
-                            <i data-lucide="arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+      <!-- Services Section -->
+      <section id="services" class="services servicos-premium">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Áreas de Atuação</div>
+            <h2 class="section-title">Serviços Jurídicos Especializados</h2>
+            <p class="section-description">
+              Oferecemos soluções jurídicas completas em diversas áreas do
+              direito, sempre com foco na qualidade e na satisfação do cliente.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-card popular">
+              <div class="service-badge">Popular</div>
+              <div class="service-icon">
+                <img
+                  src="assets/icon/file-contract-light-full.svg"
+                  alt="Ícone Arquivo"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito Civil</h3>
+                <p class="service-description">
+                  Contratos, responsabilidade civil, direitos reais e
+                  obrigações.
+                </p>
+                <ul class="service-features">
+                  <li>Contratos</li>
+                  <li>Indenizações</li>
+                  <li>Propriedade</li>
+                  <li>Sucessões</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <img
+                  src="assets/icon/briefcase-regular-full.svg"
+                  alt="Ícone Pasta"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito Trabalhista</h3>
+                <p class="service-description">
+                  Defesa de direitos trabalhistas e previdenciários.
+                </p>
+                <ul class="service-features">
+                  <li>Rescisões</li>
+                  <li>FGTS</li>
+                  <li>Horas Extras</li>
+                  <li>Aposentadoria</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <img
+                  src="assets/icon/handshake-light-full.svg"
+                  alt="Ícone Handshake"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito Empresarial</h3>
+                <p class="service-description">
+                  Consultoria jurídica para empresas e empreendedores.
+                </p>
+                <ul class="service-features">
+                  <li>Constituição</li>
+                  <li>Contratos</li>
+                  <li>Tributário</li>
+                  <li>Compliance</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-card popular">
+              <div class="service-badge">Popular</div>
+              <div class="service-icon">
+                <img
+                  src="assets/icon/users-regular-full.svg"
+                  alt="Ícone Usuários"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito de Família</h3>
+                <p class="service-description">
+                  Divórcios, guarda, pensão alimentícia e adoção.
+                </p>
+                <ul class="service-features">
+                  <li>Divórcio</li>
+                  <li>Guarda</li>
+                  <li>Pensão</li>
+                  <li>Adoção</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- fim linha 1 -->
+
+          <div class="services-grid">
+            <!-- linha 2 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <img
+                  src="assets/icon/car-light-full.svg"
+                  alt="Ícone Carro"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito de Trânsito</h3>
+                <p class="service-description">
+                  Defesa em casos de acidentes e infrações de trânsito.
+                </p>
+                <ul class="service-features">
+                  <li>Acidentes</li>
+                  <li>Infrações</li>
+                  <li>Multas</li>
+                  <li>Recursos</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <img
+                  src="assets/icon/building-light-full.svg"
+                  alt="Ícone Building"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito Imobiliário</h3>
+                <p class="service-description">
+                  Consultoria em compra, venda e regularização de imóveis.
+                </p>
+                <ul class="service-features">
+                  <li>Compra e venda</li>
+                  <li>Regularização</li>
+                  <li>Contratos</li>
+                  <li>Usucapião</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <img
+                  src="assets/icon/landmark-light-full.svg"
+                  alt="Ícone Landmark"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito Bancário</h3>
+                <p class="service-description">
+                  Analises e Revisões de Contratos Bancários
+                </p>
+                <ul class="service-features">
+                  <li>Financiamentos</li>
+                  <li>Empréstimos</li>
+                  <li>Empréstimos consignados</li>
+                  <li>Renegociações</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">
+                <img
+                  src="assets/icon/person-cane-light-full.svg"
+                  alt="Ícone Person Cane"
+                  width="36"
+                  height="36"
+                />
+              </div>
+              <div class="service-content">
+                <h3 class="service-title">Direito Previdenciário</h3>
+                <p class="service-description">
+                  Analises e Revisões de aposentadorias.
+                </p>
+                <ul class="service-features">
+                  <li>Aposentadorias em geral</li>
+                  <li>Auxílio pessoas com deficiência - PCD</li>
+                  <li>Aposentadoria Especial</li>
+                </ul>
+                <a
+                  href="#contact"
+                  class="service-link"
+                  onclick="scrollToSection('#contact')"
+                >
+                  Saiba Mais
+                  <i data-lucide="arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-cta">
+            <div class="cta-card">
+              <h3>Não encontrou o que procura?</h3>
+              <p>
+                Entre em contato conosco para uma consulta personalizada sobre
+                seu caso específico.
+              </p>
+              <button
+                class="btn btn-primary btn-large"
+                onclick="scrollToSection('#contact')"
+              >
+                Consulta Gratuita
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section
             <div class="container">
                 <div class="about-content">
                     <div class="about-text">
@@ -471,380 +639,596 @@
         </section>
 
         <!-- Team Section -->
-        <section id="team" class="team">
-            <div class="container">
-                <div class="section-header">
-                    <div class="badge">Nossa Equipe</div>
-                    <h2 class="section-title">Profissionais Qualificados</h2>
-                    <p class="section-description">
-                        Conheça nossa equipe de advogados especialistas, comprometidos em 
-                        oferecer as melhores soluções jurídicas para você.
-                    </p>
+      <section id="team" class="team">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Nossa Equipe</div>
+            <h2 class="section-title">Profissionais Qualificados</h2>
+            <p class="section-description">
+              Conheça nossa equipe de advogados especialistas, comprometidos em
+              oferecer as melhores soluções jurídicas para você.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="searce/page_1.png"
+                  alt="Dra. Valéria Penha"
+                  onerror="
+                    this.onerror = null;
+                    this.style.display = 'none';
+                    document.getElementById('team1-error').style.display =
+                      'block';
+                  "
+                />
+                <div id="team1-error" class="error" style="display: none">
+                  <div class="error-content">
+                    <i data-lucide="user"></i>
+                    <p>Dra. Valéria Penha</p>
+                  </div>
                 </div>
-
-                <div class="team-grid">
-                    <div class="team-card">
-                    <div class="team-image">
-                        <img src="searce/page_1.png" alt="Dra. Valéria Penha" onerror="this.onerror=null; this.style.display='none'; document.getElementById('team1-error').style.display='block';">
-                        <div id="team1-error" class="error" style="display: none;">
-                            <div class="error-content">
-                                <i data-lucide="user"></i>
-                                <p>Dra. Valéria Penha</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <h3 class="team-name">Dra. Valéria Penha</h3>
-                        <p class="team-role">Fundadora</p>
-                        <div class="team-badge">Direito Previdencialista e Trabalhista</div>
-                        <div class="team-info">
-                            <div class="team-experience">
-                                <i data-lucide="graduation-cap"></i>
-                                <img src="assets/icon/graduation-cap-solid-full.svg" alt="Chapeu Graduação" width="20" height="20" />
-                                <span>12 anos</span>
-                            </div>
-                            <p class="team-education">Especialista em Direito Previdnciário - UNIFEOB</p>
-                        </div>
-                        <div class="team-actions">
-                            <button class="team-contact-btn">
-                                <i data-lucide="phone"></i>
-                            </button>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="team-card">
-                        <div class="team-image">
-                            <img src="searce/adv-02.jpg" alt="Foto do Segundo Membro da Equipe">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="team-name">Dra. Patrícia Pereira</h3>
-                            <p class="team-role">Advogada Associada</p>
-                            <div class="team-badge">Direito Trabalhista</div>
-                            <div class="team-info">
-                                <div class="team-experience">
-                                    <i data-lucide="graduation-cap"></i>
-                                    <img src="assets/icon/graduation-cap-solid-full.svg" alt="Chapeu Graduação" width="20" height="20" />
-                                    <span>26 anos</span>
-                                </div>
-                                <p class="team-education">Especialista em Direito Trabalhista - FDSM</p>
-                            </div>
-                            <div class="team-actions">
-                                <button class="team-contact-btn">
-                                    <i data-lucide="phone"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="team-card">
-                        <div class="team-image">
-                            <img src="searce/adv-03.jpg" alt="Foto do Terceiro Membro da Equipe">
-                        </div>
-                        <div class="team-content">
-                            <h3 class="team-name">Dra. Anna Beatriz Prado</h3>
-                            <p class="team-role">Advogada Associada</p>
-                            <div class="team-badge">Direito Bancário e Direito Médico</div>
-                            <div class="team-info">
-                                <div class="team-experience">
-                                    <i data-lucide="graduation-cap"></i>
-                                    <img src="assets/icon/graduation-cap-solid-full.svg" alt="Chapeu Graduação" width="20" height="20" />
-                                    <span> 6 anos</span>
-                                </div>
-                                <p class="team-education">Especialista em Direito Bancário e Médico - FDSM</p>
-                            </div>
-                            <div class="team-actions">
-                                <button class="team-contact-btn">
-                                    <i data-lucide="phone"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="team-content">
+                <h3 class="team-name">Dra. Valéria Penha</h3>
+                <p class="team-role">Fundadora</p>
+                <div class="team-badge">
+                  Direito Previdencialista e Trabalhista
                 </div>
-
-                <div class="team-cta">
-                    <div class="cta-card">
-                        <h3>Precisa de consultoria jurídica especializada?</h3>
-                        <p>Nossa equipe está pronta para analisar seu caso e oferecer as melhores 
-                        soluções jurídicas. Entre em contato e agende uma consulta.</p>
-                        <button class="btn btn-primary btn-large" onclick="scrollToSection('#contact')">
-                            Falar com Especialista
-                            <i data-lucide="arrow-right"></i>
-                        </button>
-                    </div>
+                <div class="team-info">
+                  <div class="team-experience">
+                    <i data-lucide="graduation-cap"></i>
+                    <img
+                      src="assets/icon/graduation-cap-solid-full.svg"
+                      alt="Chapeu Graduação"
+                      width="20"
+                      height="20"
+                    />
+                    <span>12 anos</span>
+                  </div>
+                  <p class="team-education">
+                    Especialista em Direito Previdnciário - UNIFEOB
+                  </p>
                 </div>
+                <div class="team-actions">
+                  <button class="team-contact-btn">
+                    <i data-lucide="phone"></i>
+                  </button>
+                </div>
+              </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="section-header">
-                    <div class="badge">Contato</div>
-                    <h2 class="section-title">Entre em Contato</h2>
-                    <p class="section-description">
-                        Estamos prontos para ajudar você. Entre em contato e agende 
-                        uma consulta gratuita para discutir seu caso.
-                    </p>
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="searce/adv-02.jpg"
+                  alt="Foto do Segundo Membro da Equipe"
+                />
+              </div>
+              <div class="team-content">
+                <h3 class="team-name">Dra. Patrícia Pereira</h3>
+                <p class="team-role">Advogada Associada</p>
+                <div class="team-badge">Direito Trabalhista</div>
+                <div class="team-info">
+                  <div class="team-experience">
+                    <i data-lucide="graduation-cap"></i>
+                    <img
+                      src="assets/icon/graduation-cap-solid-full.svg"
+                      alt="Chapeu Graduação"
+                      width="20"
+                      height="20"
+                    />
+                    <span>26 anos</span>
+                  </div>
+                  <p class="team-education">
+                    Especialista em Direito Trabalhista - FDSM
+                  </p>
                 </div>
-
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <img src="assets/icon/location-dot-regular-full.svg" alt="Icone Localização" width="28" height="28" />
-                                <i data-lucide="map-pin"></i>
-                            </div>
-                            <div class="contact-details">
-                                
-                                <h3>Endereço Fisico</h3>
-                                <p> Praça João Pinheiro  171</p>
-                                <p> Centro, Pouso Alegre - MG</p>
-                                <p>CEP:37550-000</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <img src="assets/icon/phone-regular-full.svg" alt="Icone telefone" width="28" height="28" />
-                                <i data-lucide="phone"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Telefones</h3>
-                                <p>(35) 99879-1593</p>
-                                <p>WhatsApp: (35) 99879-1593</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                 <img src="assets/icon/envelope-regular-full.svg" alt="Icone ENVELOPE" width="28" height="28" />
-                                <i data-lucide="mail"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>E-mail</h3>
-                                <p>escritoriovirtual.vp@outlook.com.br</p>
-                                <p>escritoriovirtual04@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-card">
-                            <div class="contact-icon">
-                                <img src="assets/icon/clock-regular-full.svg" alt="Icone relogio" width="28" height="28" />
-                                <i data-lucide="clock"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Horário de Atendimento</h3>
-                                <p>Segunda a Sexta: 8h às 18h</p>
-                                <p>Sábado: 8h às 12h</p>
-                                <p>Emergências: 24h</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-actions">
-                            
-                            <button class="btn btn-whatsapp btn-full" onclick="window.open('https://wa.me/5535998791593', '_blank')">
-                                <img src="assets/icon/whatsapp-brands-solid-full.svg" alt="Icone whatsaap" width="37" height="37" />
-                                <i data-lucide="phone"></i>
-                                WhatsApp: Atendimento Rápido
-                            </button>
-                            <button class="btn btn-outline btn-full" onclick="window.location.href='mailto:contato@advocaciasilva.com.br'">
-                                <img src="assets/icon/envelope-regular-full.svg" alt="Icone e-mail" width="37" height="37" />
-                                <i data-lucide="mail"></i>
-                                E-mail: Consulta Detalhada
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="contact-form-container">
-                        <div class="contact-form-card">
-                            <h3>Envie sua Mensagem</h3>
-                            <p>Preencha o formulário abaixo e entraremos em contato em até 24 horas.</p>
-                            
-                            <form id="contactForm" class="contact-form">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="name">Nome Completo *</label>
-                                        <input type="text" id="name" name="name" required placeholder="Seu nome completo" minlength="2">
-                                        <div class="error-message" id="nameError"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">E-mail *</label>
-                                        <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
-                                        <div class="error-message" id="emailError"></div>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="phone">Telefone</label>
-                                        <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999">
-                                        <div class="error-message" id="phoneError"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="subject">Assunto *</label>
-                                        <input type="text" id="subject" name="subject" required placeholder="Assunto da consulta" minlength="3">
-                                        <div class="error-message" id="subjectError"></div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="message">Mensagem *</label>
-                                    <textarea id="message" name="message" required rows="6" placeholder="Descreva detalhadamente sua situação jurídica..." minlength="10"></textarea>
-                                    <div class="error-message" id="messageError"></div>
-                                </div>
-
-                                <div class="form-check">
-                                    <img src="assets/icon/circle-check-regular-full.svg" alt="icone ciclo chek" width="25" height="25" />
-                                    <i data-lucide="check-circle"></i>
-                                    <span>Consulta inicial gratuita</span>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary btn-full btn-large" id="submitBtn">
-                                    <span id="btnText">
-                                        <i data-lucide="send"></i>
-                                        Enviar Mensagem
-                                    </span>
-                                    <span id="btnLoading" style="display: none;">
-                                        <i data-lucide="loader-2" class="loading-icon"></i>
-                                        Enviando...
-                                    </span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+                <div class="team-actions">
+                  <button class="team-contact-btn">
+                    <i data-lucide="phone"></i>
+                  </button>
                 </div>
-
-                <div class="contact-map">
-                    <div class="map-placeholder">
-                        <div class="map-content">
-                            <i data-lucide="map-pin"></i>
-                            <img src="assets/icon/location-dot-regular-full.svg" alt="Icone Localização" width="50" height="50" />
-                            <p> Praça João Pinheiro 171 <br> Centro, Pouso Alegre - MG</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+
+            <div class="team-card">
+              <div class="team-image">
+                <img
+                  src="searce/adv-03.jpg"
+                  alt="Foto do Terceiro Membro da Equipe"
+                />
+              </div>
+              <div class="team-content">
+                <h3 class="team-name">Dra. Anna Beatriz Prado</h3>
+                <p class="team-role">Advogada Associada</p>
+                <div class="team-badge">Direito Bancário e Direito Médico</div>
+                <div class="team-info">
+                  <div class="team-experience">
+                    <i data-lucide="graduation-cap"></i>
+                    <img
+                      src="assets/icon/graduation-cap-solid-full.svg"
+                      alt="Chapeu Graduação"
+                      width="20"
+                      height="20"
+                    />
+                    <span> 6 anos</span>
+                  </div>
+                  <p class="team-education">
+                    Especialista em Direito Bancário e Médico - FDSM
+                  </p>
+                </div>
+                <div class="team-actions">
+                  <button class="team-contact-btn">
+                    <i data-lucide="phone"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-image">
+                <img src="searce/adv-04.jpeg" alt="Dra. Fabiana Cruz" />
+              </div>
+              <div class="team-content">
+                <h3 class="team-name">Dra. Fabiana Cruz</h3>
+                <p class="team-role">Advogada Associada</p>
+                <div class="team-badge">Direito Cível e Empresarial</div>
+                <div class="team-info">
+                  <div class="team-experience">
+                    <i data-lucide="graduation-cap"></i>
+                    <img
+                      src="assets/icon/graduation-cap-solid-full.svg"
+                      alt="Chapeu Graduação"
+                      width="20"
+                      height="20"
+                    />
+                    <span>14 anos</span>
+                  </div>
+                  <p class="team-education">
+                    Especialista em Direito Empresarial, Família e Sucessões OAB
+                    SP 315.876
+                  </p>
+                </div>
+                <div class="team-actions">
+                  <button class="team-contact-btn">
+                    <i data-lucide="phone"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="team-cta">
+            <div class="cta-card">
+              <h3>Precisa de consultoria jurídica especializada?</h3>
+              <p>
+                Nossa equipe está pronta para analisar seu caso e oferecer as
+                melhores soluções jurídicas. Entre em contato e agende uma
+                consulta.
+              </p>
+              <button
+                class="btn btn-primary btn-large"
+                onclick="scrollToSection('#contact')"
+              >
+                Falar com Especialista
+                <i data-lucide="arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="badge">Contato</div>
+            <h2 class="section-title">Entre em Contato</h2>
+            <p class="section-description">
+              Estamos prontos para ajudar você. Entre em contato e agende uma
+              consulta gratuita para discutir seu caso.
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <img
+                    src="assets/icon/location-dot-regular-full.svg"
+                    alt="Icone Localização"
+                    width="28"
+                    height="28"
+                  />
+                  <i data-lucide="map-pin"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Endereço Fisico</h3>
+                  <p>Praça João Pinheiro 171</p>
+                  <p>Centro, Pouso Alegre - MG</p>
+                  <p>CEP:37550-000</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <img
+                    src="assets/icon/phone-regular-full.svg"
+                    alt="Icone telefone"
+                    width="28"
+                    height="28"
+                  />
+                  <i data-lucide="phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Telefones</h3>
+                  <p>(35) 99879-1593</p>
+                  <p>WhatsApp: (35) 99879-1593</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <img
+                    src="assets/icon/envelope-regular-full.svg"
+                    alt="Icone ENVELOPE"
+                    width="28"
+                    height="28"
+                  />
+                  <i data-lucide="mail"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>E-mail</h3>
+                  <p>escritoriovirtual.vp@outlook.com.br</p>
+                  <p>escritoriovirtual04@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <img
+                    src="assets/icon/clock-regular-full.svg"
+                    alt="Icone relogio"
+                    width="28"
+                    height="28"
+                  />
+                  <i data-lucide="clock"></i>
+                </div>
+                <div class="contact-details">
+                  <h3>Horário de Atendimento</h3>
+                  <p>Segunda a Sexta: 8h às 18h</p>
+                  <p>Sábado: 8h às 12h</p>
+                  <p>Emergências: 24h</p>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <button
+                  class="btn btn-whatsapp btn-full"
+                  onclick="window.open('https://wa.me/5535998791593', '_blank')"
+                >
+                  <img
+                    src="assets/icon/whatsapp-brands-solid-full.svg"
+                    alt="Icone whatsaap"
+                    width="37"
+                    height="37"
+                  />
+                  <i data-lucide="phone"></i>
+                  WhatsApp: Atendimento Rápido
+                </button>
+                <button
+                  class="btn btn-outline btn-full"
+                  onclick="
+                    window.location.href =
+                      'mailto:contato@advocaciasilva.com.br'
+                  "
+                >
+                  <img
+                    src="assets/icon/envelope-regular-full.svg"
+                    alt="Icone e-mail"
+                    width="37"
+                    height="37"
+                  />
+                  <i data-lucide="mail"></i>
+                  E-mail: Consulta Detalhada
+                </button>
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <div class="contact-form-card">
+                <h3>Envie sua Mensagem</h3>
+                <p>
+                  Preencha o formulário abaixo e entraremos em contato em até 24
+                  horas.
+                </p>
+
+                <form id="contactForm" class="contact-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="name">Nome Completo *</label>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Seu nome completo"
+                        minlength="2"
+                      />
+                      <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">E-mail *</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="seu.email@exemplo.com"
+                      />
+                      <div class="error-message" id="emailError"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="phone">Telefone</label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="(11) 99999-9999"
+                      />
+                      <div class="error-message" id="phoneError"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="subject">Assunto *</label>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        required
+                        placeholder="Assunto da consulta"
+                        minlength="3"
+                      />
+                      <div class="error-message" id="subjectError"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Mensagem *</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows="6"
+                      placeholder="Descreva detalhadamente sua situação jurídica..."
+                      minlength="10"
+                    ></textarea>
+                    <div class="error-message" id="messageError"></div>
+                  </div>
+
+                  <div class="form-check">
+                    <img
+                      src="assets/icon/circle-check-regular-full.svg"
+                      alt="icone ciclo chek"
+                      width="25"
+                      height="25"
+                    />
+                    <i data-lucide="check-circle"></i>
+                    <span>Consulta inicial gratuita</span>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-full btn-large"
+                    id="submitBtn"
+                  >
+                    <span id="btnText">
+                      <i data-lucide="send"></i>
+                      Enviar Mensagem
+                    </span>
+                    <span id="btnLoading" style="display: none">
+                      <i data-lucide="loader-2" class="loading-icon"></i>
+                      Enviando...
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-map">
+            <div class="map-placeholder">
+              <div class="map-content">
+                <i data-lucide="map-pin"></i>
+                <img
+                  src="assets/icon/location-dot-regular-full.svg"
+                  alt="Icone Localização"
+                  width="50"
+                  height="50"
+                />
+                <p>
+                  Praça João Pinheiro 171 <br />
+                  Centro, Pouso Alegre - MG
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-company">
-                    <div class="logo">
-<div class="logo-icon">
-    <i class="fas fa-balance-scale" style="font-size: 2.5rem;"></i>
-    <img src="assets/icon/scale-balanced-regular-full.svg" alt="icone balança" width="24" height="24" viewBox="0 0 640 640" fill="width">
-</div>
-                        <div class="logo-text">
-                            <h3>Valeria Penha advocacia</h3>
-                            <p>Soluções Jurídicas</p>
-                        </div>
-                    </div>
-                    <p class="footer-description">
-                        Mais de 12 anos oferecendo soluções jurídicas especializadas 
-                        com excelência, ética e compromisso com nossos clientes.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile.php?id=61569272073851" class="social-link" target="_blank">
-                            <img src="assets/icon/facebook-brands-solid-full.svg" alt="Facebook" width="30" height="30" />
-                        </a>
-                        <a href="https://www.instagram.com/valeriacpenha/?__pwa=1" class="social-link" target="_blank">
-                            <img src="assets/icon/instagram-brands-solid-full.svg" alt="Instagram" width="30" height="30" />
-                        </a>
-                        <a href="https://www.tiktok.com" class="social-link" target="_blank">
-                            <img src="assets/icon/tiktok-brands-solid-full.svg" alt="TikTok" width="30" height="30" />
-                        </a>
-                    </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-company">
+            <div class="logo">
+              <div class="logo-icon">
+                <i class="fas fa-balance-scale" style="font-size: 2.5rem"></i>
+                <img
+                  src="searce/logo.jpeg"
+                  alt="Logo Valéria Penha Advocacia"
+                  width="24"
+                  height="24"
+                />
+              </div>
+              <div class="logo-text">
+                <div class="logo-title">
+                  <span class="vp">VP</span><span class="separator"> | </span
+                  ><span class="advocacia">Advocacia</span>
                 </div>
-
-                <div class="footer-nav">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#services">Serviços</a></li>
-                        <li><a href="#about">Sobre Nós</a></li>
-                        <li><a href="#team">Equipe</a></li>
-                        <li><a href="#contact">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-services">
-                    <h4>Áreas de Atuação</h4>
-                    <ul>
-                        <li><a href="#services">Direito Civil</a></li>
-                        <li><a href="#services">Direito Trabalhista</a></li>
-                        <li><a href="#services">Direito Empresarial</a></li>
-                        <li><a href="#services">Direito de Família</a></li>
-                        <li><a href="#services">Direito de Trânsito</a></li>
-                        <li><a href="#services">Direito Imobiliário</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-contact">
-                    <h4>Contato</h4>
-                    <div class="footer-contact-info">
-                        <div class="footer-contact-item">
-                            <i data-lucide="map-pin"></i>
-                            <div>
-                                <p> Praça João Pinheiro 171</p>
-                                <p>Centro, Pouso Alegre - MG</p>
-                                <p>CEP: 37550-000</p>
-                            </div>
-                        </div>
-                        <div class="footer-contact-item">
-                            <i data-lucide="phone"></i>
-                            <span>(35) 99879-1593</span>
-                        </div>
-                        <div class="footer-contact-item">
-                            <i data-lucide="mail"></i>
-                            <div>
-                                <span>advocaciavirtual.vp@outlook.com.br</span><br>
-                                <span>escritoriovirtual04@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="footer-contact-item">
-                            <i data-lucide="clock"></i>
-                            <div>
-                                <p>Seg-Sex: 8h às 18h</p>
-                                <p>Sábado: 8h às 12h</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p>Soluções Jurídicas para você ou sua empresa</p>
+              </div>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-bottom-content">
-                    <div class="footer-copyright">
-                        <p>&copy; 2025 advocacia virtual. Todos os direitos reservados.</p>
-                        <div class="footer-links">
-                            <a href="#">Política de Privacidade</a>
-                            <a href="#">Termos de Uso</a>
-                        </div>
-                    </div>
-                    <button class="back-to-top" id="backToTop">
-                        <i data-lucide="arrow-up"></i>
-                    </button>
-                </div>
+            <p class="footer-description">
+              Mais de 12 anos oferecendo soluções jurídicas especializadas com
+              excelência, ética e compromisso com nossos clientes.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=61569272073851"
+                class="social-link"
+                target="_blank"
+              >
+                <img
+                  src="assets/icon/facebook-brands-solid-full.svg"
+                  alt="Facebook"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/valeriacpenha/?__pwa=1"
+                class="social-link"
+                target="_blank"
+              >
+                <img
+                  src="assets/icon/instagram-brands-solid-full.svg"
+                  alt="Instagram"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <a
+                href="https://www.tiktok.com"
+                class="social-link"
+                target="_blank"
+              >
+                <img
+                  src="assets/icon/tiktok-brands-solid-full.svg"
+                  alt="TikTok"
+                  width="30"
+                  height="30"
+                />
+              </a>
             </div>
+          </div>
+
+          <div class="footer-nav">
+            <h4>Navegação</h4>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#about">Sobre Nós</a></li>
+              <li><a href="#team">Equipe</a></li>
+              <li><a href="#contact">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-services">
+            <h4>Áreas de Atuação</h4>
+            <ul>
+              <li><a href="#services">Direito Civil</a></li>
+              <li><a href="#services">Direito Trabalhista</a></li>
+              <li><a href="#services">Direito Empresarial</a></li>
+              <li><a href="#services">Direito de Família</a></li>
+              <li><a href="#services">Direito de Trânsito</a></li>
+              <li><a href="#services">Direito Imobiliário</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contato</h4>
+            <div class="footer-contact-info">
+              <div class="footer-contact-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <p>Praça João Pinheiro 171</p>
+                  <p>Centro, Pouso Alegre - MG</p>
+                  <p>CEP: 37550-000</p>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <i data-lucide="phone"></i>
+                <span>(35) 99879-1593</span>
+              </div>
+              <div class="footer-contact-item">
+                <i data-lucide="mail"></i>
+                <div>
+                  <span>advocaciavirtual.vp@outlook.com.br</span><br />
+                  <span>escritoriovirtual04@gmail.com</span>
+                </div>
+              </div>
+              <div class="footer-contact-item">
+                <i data-lucide="clock"></i>
+                <div>
+                  <p>Seg-Sex: 8h às 18h</p>
+                  <p>Sábado: 8h às 12h</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Developer Card -->
+        <div class="developer-card">
+          <div class="developer-card-inner">
+            <div class="developer-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="developer-text">
+              <span class="developer-label">Site criado e desenvolvido por</span>
+              <span class="developer-name">Bruno Santos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-content">
+            <div class="footer-copyright">
+              <p>
+                &copy; 2025 advocacia virtual. Todos os direitos reservados.
+              </p>
+              <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+              </div>
+            </div>
+            <button class="back-to-top" id="backToTop">
+              <i data-lucide="arrow-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- Toast Notification -->
     <div id="toast" class="toast">
-        <div class="toast-content">
-            <i data-lucide="check-circle"></i>
-            <div class="toast-text">
-                <div class="toast-title">Mensagem enviada com sucesso!</div>
-                <div class="toast-description">Entraremos em contato em até 24 horas.</div>
-            </div>
+      <div class="toast-content">
+        <i data-lucide="check-circle"></i>
+        <div class="toast-text">
+          <div class="toast-title">Mensagem enviada com sucesso!</div>
+          <div class="toast-description">
+            Entraremos em contato em até 24 horas.
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Scripts -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
